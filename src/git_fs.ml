@@ -21,9 +21,7 @@
 let ref_expiration_secs = 10.
 
 (* Shorthand *)
-module UL = struct
-  include Unix.LargeFile
-end
+module UL = Unix.LargeFile
 
 (* a |> b |> c is equivalent to c (b a).
   I haven't found Haskell's ($) operator yet,
